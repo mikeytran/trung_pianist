@@ -1,5 +1,5 @@
 <template>
-  <div class="photo"></div>
+  <div class="main"></div>
 </template>
 
 <script>
@@ -12,15 +12,16 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.photo {
+.main {
   background-image: url(../assets/images/bg-top-header.jpg);
   background-repeat: no-repeat;
   max-width: 100%;
   width: 100%;
   height: 100vh;
-  background-position: top;
-  /* background-size: cover; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
