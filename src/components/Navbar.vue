@@ -59,4 +59,9 @@ export default {
   color: #ffffff !important;
   border-color: #ffffff;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
 </style>
