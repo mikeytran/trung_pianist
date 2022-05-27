@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 .main {
-  background-image: url(../assets/images/test_bg.jpg);
+  background-image: url(../assets/images/pic1.jpg);
   background-repeat: no-repeat;
   max-width: 100%;
   width: 100%;
