@@ -1,10 +1,9 @@
+/* eslint-disable no-undef */
 module.exports = {
   css: {
     loaderOptions: {
-      sass: {
-        additionalData: `
-        @import "@/assets/scss/globals.scss";
-        `,
+      scss: {
+        additionalData: '@import "@/assets/scss/globals.scss";',
       },
     },
   },
