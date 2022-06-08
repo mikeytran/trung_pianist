@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .main {
   background-image: url(../assets/images/pic1.jpg);
   background-repeat: no-repeat;
