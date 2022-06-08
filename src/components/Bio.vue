@@ -1,6 +1,8 @@
 <template>
   <div class="main">
-    <div class="main__container"></div>
+    <div class="main__container">
+      <h2>BIOGRAFIA</h2>
+    </div>
   </div>
 </template>
 
@@ -8,7 +10,6 @@
 export default {
   name: "Bio",
   props: {
-    // eslint-disable-next-line vue/require-default-prop
     msg: String,
   },
 };
@@ -16,6 +17,8 @@ export default {
 
 <style lang="scss" scoped>
 .main {
+  width: 100%;
+  padding: 0 20px;
   &__container {
   }
 }
