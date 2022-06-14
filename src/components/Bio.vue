@@ -3,42 +3,10 @@
     <h2>BIOGRAFIA</h2>
     <div class="main__container">
       <div class="left-block">
-        <img src="@/assets/images/bio-pic.jpg" />
+        <img :src="imageUrl" />
       </div>
       <div class="right-block">
-        <p>
-          Wietnamski pianista urodzony 30 września 1996 roku w Ha Noi od dziecka
-          mieszkający w Polsce. Aktualnie kontynuuje studia podyplomowe u prof.
-          Katarzyny Popowej-Zydroń w Akademii Muzycznej w Bydgoszczy.
-          <br /><br />
-          Do jego ostatnich osiągnięć należą: zwycięstwo w XVII Ogólnopolskim
-          Festiwalu Pianistycznym „Chopinowskie Interpretacje Młodych” w
-          Koninie-Żychlinie (2021), V nagroda na Ogólnopolskim Konkursie im.
-          Fryderyka Chopina w Warszawie (2020), Grand Prix na Międzynarodowym
-          Konkursie Muzyki Kameralnej w Wietnamie (2019) i III nagroda na
-          Międzynarodowym Konkursie Pianistycznym Karlovac w Chorwacji (2019). W
-          2021 wziął udział w drugim etapie XVIII Międzynarodowym Konkursie
-          Pianistycznym im. Fryderyka Chopina w Warszawie.
-          <br /><br />
-          Koncertował w Europie: Niemczech, Francji, Rosji, Ukrainie, Węgrzech i
-          w Polsce, oraz w Stanach Zjednoczonych, Tajlandii, Korei Południowej,
-          Japonii i Wietnamie. W trakcie wystawy światowej "Expo 2020" w Dubaju
-          dał cykl recitali w ramach koncertów NIFC w Polskim Pawilonie. Jako
-          solista wystąpił z Vietnam National Symphony Orchestra, Hanoi
-          Symphonic Orchestra, Orkiestrą Filharmonii Narodowej w Warszawie, #
-          Orkiestrą Polskiego Radia czy Orkiestrą Filharmonii Lubelskiej, m.in.
-          pod batutą takich dyrygentów jak: Le Phi Phi, Honna Tetsuji, Łukasz
-          Borowicz czy Marek Pijarowski. Pianista wykonuje także muzykę
-          kameralną współpracując m.in z Ulysses Quartet, Arod Quartet oraz Arso
-          Quintet. W dotychczasowym dorobku ma występy m.in. na festiwalach im.
-          Artura Rubinsteina w Łodzi (2019), Frost Chopin Piano Festival w Miami
-          (2018, 2019), na koncertach chopinowskich w Żelazowej Woli, Muzeum
-          Fryderyka Chopina czy w Łazienkach Królewskich.
-          <br /><br />
-          Brał udział w licznych kursach mistrzowskich, prowadzonych między
-          innymi przez: Tatianę Shebanovą, Dang Thai Sona, Kevina Kennera,
-          Dmitri Alexeeva czy Andrzeja Jaśinski.
-        </p>
+        <p v-html="text"></p>
       </div>
     </div>
   </div>
@@ -48,7 +16,14 @@
 export default {
   name: "Bio",
   props: {
-    msg: String,
+    text: {
+      type: String,
+      default: "",
+    },
+    imageUrl: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>
@@ -63,7 +38,6 @@ export default {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 
     .left-block {
@@ -73,10 +47,29 @@ export default {
       }
     }
     .right-block {
-      width: 70%;
+      width: 60%;
       p {
         text-align: justify;
         margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop-breakpoint-min) {
+  .main {
+    &__container {
+      flex-direction: column;
+
+      .left-block {
+        width: 100%;
+      }
+      .right-block {
+        width: 100%;
+        p {
+          margin-top: 30px;
+          margin-left: 0;
+        }
       }
     }
   }
