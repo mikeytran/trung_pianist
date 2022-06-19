@@ -3,7 +3,7 @@
     <h2>BIOGRAFIA</h2>
     <div class="main__container">
       <div class="left-block">
-        <img :src="imageUrl" />
+        <img :src="require(`@/assets/images/${imageUrl}`)" />
       </div>
       <div class="right-block">
         <p v-html="text"></p>

@@ -5,10 +5,7 @@
 <script>
 export default {
   name: "Home",
-  props: {
-    // eslint-disable-next-line vue/require-default-prop
-    msg: String,
-  },
+  props: {},
 };
 </script>
 
