@@ -5,6 +5,7 @@
     <Bio v-bind="bio" />
     <Calendar v-bind="calendar" />
     <Cds v-bind="cds" />
+    <Spotify />
   </Layout>
 </template>
 
@@ -14,6 +15,7 @@ import Navbar from "./components/Navbar.vue";
 import Bio from "./components/Bio.vue";
 import Calendar from "./components/Calendar.vue";
 import Cds from "./components/CDs.vue";
+import Spotify from "./components/Spotify.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     Bio,
     Calendar,
     Cds,
+    Spotify,
   },
   data() {
     return {
