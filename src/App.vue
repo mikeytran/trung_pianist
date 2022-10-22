@@ -4,6 +4,7 @@
     <Home />
     <Bio v-bind="bio" />
     <Calendar v-bind="calendar" />
+    <Cds v-bind="cds" />
   </Layout>
 </template>
 
@@ -12,6 +13,7 @@ import Home from "./components/Home.vue";
 import Navbar from "./components/Navbar.vue";
 import Bio from "./components/Bio.vue";
 import Calendar from "./components/Calendar.vue";
+import Cds from "./components/CDs.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     Navbar,
     Bio,
     Calendar,
+    Cds,
   },
   data() {
     return {
@@ -49,6 +52,16 @@ export default {
             location:
               "Łazienki Królewskie<br /><span style='font-weight:normal;font-size:14px;'>Warszawa, Polska</span>",
             ctaText: "MORE INFO",
+          },
+        },
+      },
+      cds: {
+        item: {
+          one: {
+            imageUrl: "cd-image.png",
+            date: "CD - June 3, 2022",
+            type: "Chopin",
+            desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
           },
         },
       },

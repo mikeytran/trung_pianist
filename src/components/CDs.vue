@@ -1,22 +1,20 @@
 <template>
   <div class="main">
-    <h2>KALENDARZ</h2>
+    <h2>CDs</h2>
     <div class="main__container">
       <div class="items">
-        <CalendarItem v-bind="item.one" />
-        <CalendarItem v-bind="item.two" />
-        <CalendarItem v-bind="item.three" />
+        <CDsItems v-bind="item.one" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CalendarItem from "@/components/CalendarItem.vue";
+import CDsItems from "@/components/CDsItems.vue";
 export default {
-  name: "Calendar",
+  name: "CDs",
   components: {
-    CalendarItem,
+    CDsItems,
   },
   props: {
     item: {
@@ -35,7 +33,6 @@ export default {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-
     .items {
       max-width: 1100px;
       margin: 0 auto;
@@ -44,5 +41,9 @@ export default {
 }
 
 @media (max-width: $desktop-breakpoint-min) {
+  .main {
+    &__container {
+    }
+  }
 }
 </style>
