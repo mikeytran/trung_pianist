@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div id="bio" class="main">
     <h2>BIOGRAFIA</h2>
     <div class="main__container">
       <div class="left-block">

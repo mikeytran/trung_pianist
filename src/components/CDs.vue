@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div id="cds" class="main">
     <h2>CDs</h2>
     <div class="main__container">
       <div class="items">

@@ -5,7 +5,7 @@
       style="border-radius: 12px"
       src="https://open.spotify.com/embed/artist/5KfWFLWIq7WzmVu7JTsMIm?utm_source=generator&theme=0"
       width="100%"
-      height="380"
+      height="340"
       frameBorder="0"
       allowfullscreen=""
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -27,14 +27,9 @@ export default {
   max-width: 800px;
   padding: 0px 20px;
   margin: 0 auto;
-  &__container {
-  }
 }
-
 @media (max-width: $desktop-breakpoint-min) {
   .main {
-    &__container {
-    }
   }
 }
 </style>
